@@ -1,0 +1,13 @@
+{
+  "name": "decadence-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:redecadence/decadence-site.git",
+  "author": "decadence team",
+  "license": "MIT",
+  "scripts": {
+    "remove-deploy": "now rm decadence-site -y",
+    "deploy": "now --public && now alias",
+    "deploy-rm": "npm run remove-deploy && npm run deploy"
+  }
+}
